@@ -42,8 +42,6 @@ takeList (S k) (x :: xs) = x :: takeList k xs
 -- dropList (S k) [] = []
 -- dropList (S k) (x :: xs) = dropList k xs
 
-
-
 takeVect : (n : Nat) -> Vect (n + m) elem -> Vect n elem
 takeVect Z xs = []
 takeVect (S k) (x :: xs) = x :: takeVect k xs
